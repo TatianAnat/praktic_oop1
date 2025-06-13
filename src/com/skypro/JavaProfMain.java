@@ -14,8 +14,10 @@ public class JavaProfMain {
         BonusAccount petr = new BonusAccount("Petr",70,150);
         System.out.println(petr);
 
-        ivan.changeBalance(-20);
-        petr.changeBalance(-60);
+        Account[] accounts = {ivan,petr};
+        for (Account acc: accounts) {
+            acc.changeBalance(10);
+        }
 
         System.out.println(ivan);
         System.out.println(petr);

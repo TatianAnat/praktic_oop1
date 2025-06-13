@@ -10,6 +10,13 @@ public class BonusAccount extends Account {
         super(name,balance);
         this.bonuses = bonuses;
     }
+ // переопределяем родительский метод сколько денег потратил, столько бонусов получил
+
+    @Override
+    public void changeBalance(int amount) {
+        super.changeBalance(amount);
+        bonuses = bonuses - amount;
+    }
 
     @Override
     public String toString() {
