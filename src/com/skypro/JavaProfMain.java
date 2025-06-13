@@ -11,7 +11,13 @@ public class JavaProfMain {
         Account ivan = new Account("Ivan",100);
         System.out.println(ivan);
 
-        BonusAccount petr = new BonusAccount("Petr",50,150);
+        BonusAccount petr = new BonusAccount("Petr",70,150);
+        System.out.println(petr);
+
+        ivan.changeBalance(-20);
+        petr.changeBalance(-60);
+
+        System.out.println(ivan);
         System.out.println(petr);
     }
 
