@@ -1,19 +1,14 @@
-package com.skypro.account;
+package com.skypro.account.bonus;
 
-public class BonusAccount {
+import com.skypro.account.Account;
 
-    private  String name;
-    private int balance;
+public class BonusAccount extends Account {
+
     private int bonuses;
 
     public BonusAccount(String name, int balance, int bonuses) {
-        this.name = name;
-        this.balance = balance;
+        super(name,balance);
         this.bonuses = bonuses;
-    }
-
-    public void changeBalance(int amount) {
-        this.balance = balance + amount;
     }
 
     @Override

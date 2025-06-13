@@ -1,8 +1,8 @@
 package com.skypro.account;
 
 public class Account {
-    private String name;
-    private int balance;
+    protected String name;
+    protected int balance;
 
     public Account(String name, int balance) {
         this.name = name;

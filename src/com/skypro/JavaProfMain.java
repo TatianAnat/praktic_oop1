@@ -1,6 +1,7 @@
 package com.skypro;
 
 import com.skypro.account.Account;
+import com.skypro.account.bonus.BonusAccount;
 
 public class JavaProfMain {
 
@@ -9,6 +10,9 @@ public class JavaProfMain {
 
         Account ivan = new Account("Ivan",100);
         System.out.println(ivan);
+
+        BonusAccount petr = new BonusAccount("Petr",50,150);
+        System.out.println(petr);
     }
 
 }
