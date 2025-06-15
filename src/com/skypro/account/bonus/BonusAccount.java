@@ -6,6 +6,8 @@ public class BonusAccount extends Account {
 
     private int bonuses;
 
+    public int priority = 10;
+
     public BonusAccount(String name, int balance, int bonuses) {
         super(name,balance);
         this.bonuses = bonuses;
@@ -16,6 +18,15 @@ public class BonusAccount extends Account {
     public void changeBalance(int amount) {
         super.changeBalance(amount);
         bonuses = bonuses - amount;
+    }
+
+    public static void diskription() {
+        System.out.println("Банусный аккаунт");
+    }
+
+    @Override
+    public void getAllFunds() {
+        System.out.println("Аккаунт " + name + " может потратить " + (balance +  bonuses));
     }
 
     @Override
