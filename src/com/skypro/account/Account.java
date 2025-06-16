@@ -25,4 +25,14 @@ public abstract class Account {
     }
 
     public abstract void getAllFunds();
+
+    //внутри тела вызываются два абстрактных метода
+    public void validateAccount(){
+        validateOrigin();
+        validateTransaction();
+    }
+    //проверка транзакций нашего аккаунта
+    protected abstract  void validateTransaction();
+//проверить владельца аккаунта
+    protected  abstract void validateOrigin();
 }

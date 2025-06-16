@@ -25,6 +25,17 @@ public class CreditAccount extends Account {
     }
 
     @Override
+    protected void validateTransaction() {
+        System.out.println("CreditAccount.validateTransaction");
+    }
+
+    @Override
+    protected void validateOrigin() {
+        System.out.println("CreditAccount.validateOrigin");
+
+    }
+
+    @Override
     public String toString() {
         return "Аккаунт " + name + " имеет " + balance + " и " + credit + " возможный кредит";
     }

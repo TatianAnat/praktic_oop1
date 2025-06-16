@@ -33,4 +33,13 @@ public class BonusAccount extends Account {
     public String toString() {
         return "Аккаунт " + name + " имеет " + balance + " и " + bonuses + " бонусов";
     }
+
+    @Override
+    public void validateOrigin(){
+        System.out.println("BonusAccount.validateOrigin");
+    }
+    @Override
+    public void validateTransaction(){
+        System.out.println("BonusAccount.validateTransaction");
+    }
 }
